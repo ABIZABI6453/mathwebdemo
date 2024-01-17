@@ -7,6 +7,7 @@ function goToTopic() {
     }
 }
 
+
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
