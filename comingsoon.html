@@ -6,8 +6,8 @@
     <title>Coming Soon</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,36 +19,42 @@
 
         .container {
             max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #007bff;
+            color: #3498db;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         p {
-            color: #333;
-        }
-
-        .countdown {
-            font-size: 24px;
             color: #555;
-            margin-top: 20px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
-        /* Loader animation */
         .loader {
-            border: 8px solid #f3f3f3; /* Light gray */
-            border-top: 8px solid #3498db; /* Blue */
+            border: 6px solid #3498db; /* Blue */
+            border-top: 6px solid #f3f3f3; /* Light gray */
             border-radius: 50%;
             width: 50px;
             height: 50px;
             animation: spin 1s linear infinite;
-            margin-top: 20px;
+            margin: 20px auto;
         }
 
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #555;
         }
     </style>
 </head>
@@ -62,7 +68,7 @@
 
     <script>
         // Set the date we're counting down to (replace with your actual launch date)
-        var countDownDate = new Date("Jan 20, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
         // Update the countdown every 1 second
         var x = setInterval(function() {
@@ -85,7 +91,7 @@
             // If the countdown is over, display a message and hide the loader
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "Update is initializing";
+                document.getElementById("countdown").innerHTML = "EXPIRED";
                 document.querySelector(".loader").style.display = "none";
             }
         }, 1000);
