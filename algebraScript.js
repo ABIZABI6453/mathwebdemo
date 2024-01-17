@@ -24,3 +24,6 @@ function checkAnswer() {
 
 // Generate the first exercise when the page loads
 window.onload = generateExercise;
+
+
+currentAnswer = admingetanswer
