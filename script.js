@@ -7,7 +7,7 @@ function goToTopic() {
     }
 }
 
-function createSnowflake() {
+//function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
     snowflake.style.left = Math.random() * 100 + 'vw';
@@ -15,7 +15,7 @@ function createSnowflake() {
     snowflake.style.opacity = Math.random();
     snowflake.style.transform = `scale(${Math.random()})`;
 
-    document.getElementById('snowflakes-container').appendChild(snowflake);
+    //document.getElementById('snowflakes-container').appendChild(snowflake);
 
     // Remove snowflake after it falls
     setTimeout(() => {
