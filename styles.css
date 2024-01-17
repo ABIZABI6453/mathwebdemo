@@ -13,7 +13,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 2px solid #007bff;
 }
 
 select {
@@ -34,39 +33,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-/* General list styles */
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 500px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-}
-
-/* Style for each list item */
-ul li, ol li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #eaeaea;
-    font-size: 16px;
-    color: #333;
-}
-
-/* Removes border from the last item */
-ul li:last-child, ol li:last-child {
-    border-bottom: none;
-}
-
-/* Optional: Style for hover effect */
-ul li:hover, ol li:hover {
-    background-color: #e0e0e0;
-}
-
-h4 {
-    color: #FF0000;
-    size: 5px;
 }
