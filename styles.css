@@ -1,103 +1,39 @@
-#snowflakes-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Puts the snow behind your content */
-}
-
-.snowflake {
-    position: absolute;
-    top: -10px;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.7;
-}
-
 body {
     font-family: Arial, sans-serif;
-    font-family: 'Arial', sans-serif;
-    background-color: #e8eff1;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-    background-image: url('1384330_c2da8.gif'); /* Optional: a Christmas-themed background image */
-	background: linear-gradient(to right, #d32f2f, #005500, #d32f2f, #005500); /* Alternating red and green */
 }
 
 .selector {
     background: #fff;
-.content {
-    width: 60%;
-    max-width: 600px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-h1 {
-    color: #324d67;
-    margin-bottom: 15px;
-}
-
-p {
-    color: #566f89;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-#exercise {
-    background: #f9fafb;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 2px solid #d32f2f; /* Festive red border */
-    margin-top: 20px;
+    border: 2px solid #007bff;
 }
 
 select {
-#exercise span {
-    font-size: 1.4em;
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-input[type="number"] {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ced4da;
     border-radius: 4px;
-    border: 1px solid #005500; /* Christmas green border */
-    background-color: #fffef0; /* Off-white color for a snowy feel */
-    width: 100px;
-    margin-left: 10px;
+    border: 1px solid #ddd;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #d32f2f; /* Christmas red */
-    background-color: #4a69bd;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 15px;
 }
 
 button:hover {
-    background-color: #b71c1c; /* Darker shade of red on hover */
+    background-color: #0056b3;
 }
 
 /* General list styles */
@@ -106,19 +42,18 @@ ul, ol {
     padding: 0;
     margin: 20px auto;
     max-width: 500px;
-    background: #f9f9f9; /* Light snowy background */
+    background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
 
-
 /* Style for each list item */
 ul li, ol li {
     padding: 10px 15px;
-    border-bottom: 1px dashed #d32f2f; /* Red dashed line */
+    border-bottom: 1px solid #eaeaea;
     font-size: 16px;
-    color: #005500; /* Christmas green text */
+    color: #333;
 }
 
 /* Removes border from the last item */
@@ -128,16 +63,10 @@ ul li:last-child, ol li:last-child {
 
 /* Optional: Style for hover effect */
 ul li:hover, ol li:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
-    background-color: #3c6382;
+    background-color: #e0e0e0;
 }
 
 h4 {
-    color: #d32f2f; /* Festive red for headings */
-    font-size: 20px; /* Adjusted font size */
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #38ada9;
-    font-weight: bold;
+    color: #FF0000;
+    size: 5px;
 }
