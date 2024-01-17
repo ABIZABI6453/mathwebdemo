@@ -34,18 +34,35 @@
             color: #555;
             margin-top: 20px;
         }
+
+        /* Loader animation */
+        .loader {
+            border: 8px solid #f3f3f3; /* Light gray */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Coming Soon</h1>
         <p>We're working hard to bring you something awesome. Stay tuned!</p>
+        <div class="loader"></div>
         <div class="countdown" id="countdown"></div>
     </div>
 
     <script>
         // Set the date we're counting down to (replace with your actual launch date)
-        var countDownDate = new Date("Jan 20, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
         // Update the countdown every 1 second
         var x = setInterval(function() {
@@ -65,10 +82,11 @@
             document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
-            // If the countdown is over, display a message
+            // If the countdown is over, display a message and hide the loader
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "Update is initializing";
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.querySelector(".loader").style.display = "none";
             }
         }, 1000);
     </script>
