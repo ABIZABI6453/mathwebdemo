@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Help</title>
+    <link rel="stylesheet" type="text/css" href="mathstyle.css">
+	<link rel="shortcut icon" type="image/x-icon" href="+.png" />
+</head>
+<body>
+    <div class="content">
+        <h1>Addition Help</h1>
+        <p>Welcome to the Addition Help Page. Here you can learn and practice basic addition.</p>
+        
+        <h2>Learn About Addition</h2>
+        <p>Addition is one of the basic operations of arithmetic. It involves finding the total or sum by combining two or more numbers.</p>
+
+        <h2>Practice Exercise</h2>
+        <div id="exercise">
+            <span id="num1"></span> + <span id="num2"></span> = 
+            <input type="number" id="userAnswer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Check Answer</button>
+            <div id="result"></div>
+        </div>
+
+        <button onclick="generateExercise()">New Exercise</button>
+    </div>
+
+    <script src="additionScript.js"></script>
+</body>
+</html>

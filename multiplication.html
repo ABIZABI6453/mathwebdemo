@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Help</title>
+    <link rel="stylesheet" type="text/css" href="mathstyle.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Multiplication Help</h1>
+       
+		<p>Welcome to the Multiplication Help Page. Here you can learn and practice basic multiplication. <a href="https://example.com/multiplication-resource" target="_blank">Read more about Multiplication.</a></p>
+
+
+        
+        <h2>Learn About Multiplication</h2>
+        <p>Multiplication is a basic arithmetic operation. It represents the repeated addition of the same number. The result of a multiplication is called a product.</p>
+
+        <h2>Practice Exercise</h2>
+        <div id="exercise">
+            <span id="num1"></span> × <span id="num2"></span> = 
+            <input type="number" id="userAnswer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Check Answer</button>
+            <div id="result"></div>
+        </div>
+
+        <button onclick="generateExercise()">New Exercise</button>
+    </div>
+
+    <script src="multiplicationScript.js"></script>
+</body>
+</html>

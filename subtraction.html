@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subtraction Help</title>
+    <link rel="stylesheet" type="text/css" href="mathstyle.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Subtraction Help</h1>
+        <p>Welcome to the Subtraction Help Page. Here you can learn and practice basic subtraction.</p>
+        
+        <h2>Learn About Subtraction</h2>
+        <p>Subtraction is a basic arithmetic operation. It represents the operation of removing objects from a collection. The result of a subtraction is called a difference.</p>
+
+        <h2>Practice Exercise</h2>
+        <div id="exercise">
+            <span id="num1"></span> - <span id="num2"></span> = 
+            <input type="number" id="userAnswer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Check Answer</button>
+            <div id="result"></div>
+        </div>
+
+        <button onclick="generateExercise()">New Exercise</button>
+    </div>
+
+    <script src="subtractionScript.js"></script>
+</body>
+</html>

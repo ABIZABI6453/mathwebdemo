@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Algebra Help</title>
+    <link rel="stylesheet" type="text/css" href="mathstyle.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Algebra Help</h1>
+        <p>Welcome to the Algebra Help Page. Here you can learn and practice basic algebra.</p>
+        
+        <h2>Learn About Algebra</h2>
+        <p>Algebra involves studying mathematical symbols and the rules for manipulating these symbols. It is a unifying thread of almost all of mathematics.</p>
+
+        <h2>Practice Exercise</h2>
+        <div id="exercise">
+            Solve for x: <span id="equation"></span> = <span id="constant"></span>
+            <br>
+            <input type="number" id="userAnswer" placeholder="Value of x">
+            <button onclick="checkAnswer()">Check Answer</button>
+            <div id="result"></div>
+        </div>
+
+        <button onclick="generateExercise()">New Exercise</button>
+    </div>
+
+    <script src="algebraScript.js"></script>
+</body>
+</html>
