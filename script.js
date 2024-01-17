@@ -15,12 +15,5 @@ function createSnowflake() {
     snowflake.style.opacity = Math.random();
     snowflake.style.transform = `scale(${Math.random()})`;
 
-    document.getElementById('snowflakes-container').appendChild(snowflake);
-
-    // Remove snowflake after it falls
-    setTimeout(() => {
-        snowflake.remove();
-    }, 5000);
-}
 
 setInterval(createSnowflake, 100); // Adjust interval for more/less frequent snowflakes
